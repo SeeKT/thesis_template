@@ -1,0 +1,53 @@
+% 卒論/修論 テンプレート
+\documentclass[a4j,report,dvipdfmx]{jsbook}
+% 英語のときは
+% \documentclass[a4j,report,english]{jsbook}
+
+% preamble_thesis.tex を input
+\input{../tex/preamble_thesis}
+\begin{document}
+
+%%%%%%%%%%%% Title %%%%%%%%%%%%
+\input{../tex/title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Table of Contents %%%%%%%%%%%%
+\clearpage
+\tableofcontents
+\clearpage
+\setcounter{page}{0}
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Chapter1 Introduction %%%%%%%%%%%%
+\input{../tex/1_Intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Chapter2 Preliminaries %%%%%%%%%%%%
+\input{../tex/2_preliminaries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Chapter3 main1 %%%%%%%%%%%%
+\input{../tex/3_main1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Chapter4 main2 %%%%%%%%%%%%
+\input{../tex/4_main2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Chapter5 Conclusion %%%%%%%%%%%%
+\input{../tex/5_conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% Acknowledgement %%%%%%%%%%%%
+\input{../tex/acknowledgement}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% References %%%%%%%%%%%%
+% 参考文献のスタイルファイル (hogehoge.bst)
+\bibliographystyle{junsrt}
+% 参考文献のbibtexファイル (main.texからの相対パスで指定, hogehoge.bib)
+\bibliography{../bib/ref_circle,../bib/ref_triangle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

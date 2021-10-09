@@ -1,0 +1,26 @@
+\usepackage{diagbox}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,mathtools}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{bm}
+\usepackage{multirow,array}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[hang,small,bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{here}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}{Example}[chapter]
+\newtheorem{proof}{Proof}
+
+% 謝辞環境の作成
+\newenvironment{acknowledgment}{%
+  \addcontentsline{toc}{chapter}{\acknowledgmentname}
+  \chapter*{\acknowledgmentname}
+}{}
+\newcommand{\acknowledgmentname}{謝辞}
